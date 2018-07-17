@@ -1,0 +1,22 @@
+{
+  "name": "node-rest-shop",
+  "version": "1.0.0",
+  "description": "A Node.js REST Project ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dejan92/Node-REST-shop.git"
+  },
+  "author": "Dejan Jovanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dejan92/Node-REST-shop/issues"
+  },
+  "homepage": "https://github.com/dejan92/Node-REST-shop#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
