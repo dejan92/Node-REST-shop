@@ -11,11 +11,11 @@ const orderRoutes = require('./api/routes/orders');
 //connecting to mongo atlas
 mongoose.connect("mongodb+srv://dejan:" +
     process.env.MONGO_ATLAS_PW +
-    "@node-rest-shop-uogui.mongodb.net/test?retryWrites=true"
-    // , {
-    //     useMongoClient: true
-    // }
+    "@node-rest-shop-uogui.mongodb.net/test?retryWrites=true", {
+        useNewUrlParser: true
+    }
 );
+
 //setting up middlewares
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({
