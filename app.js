@@ -15,9 +15,11 @@ mongoose.connect("mongodb+srv://dejan:" +
         useNewUrlParser: true
     }
 );
+mongoose.Promise = global.Promise;
 
 //setting up middlewares
 app.use(morgan('dev'));
+app.use('/uploads', express.static('uploads'));
 app.use(bodyParser.urlencoded({
     extended: false
 }));
